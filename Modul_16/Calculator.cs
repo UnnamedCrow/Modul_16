@@ -8,10 +8,21 @@ namespace Modul_16
 {
     public class Calculator
     {
-        public int Substruction(int a, int b)
+        public int Additional(int a, int b)
+        {
+            return a + b;
+        }
+
+        public int Substraction(int a, int b)
         {
             return a - b;
         }
+
+        public int Miltiplication(int a, int b)
+        {
+            return a * b;
+        }
+
         public int Division(int a, int b)
         {
             return a / b;

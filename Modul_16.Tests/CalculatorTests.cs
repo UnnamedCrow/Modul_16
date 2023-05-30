@@ -8,20 +8,30 @@ namespace Modul_16.Tests
     public class CalculatorTests
     {
         [Test]
-        public void Test1()
+        public void Multiplicaation_MustReturnCorrectValue()
         {
-            Assert.True(100 == 100);
+            Calculator calculator = new Calculator();
+            Assert.True(calculator.Miltiplication(4, 10) == 40);
         }
         [Test]
-        public void Test2()
+        public  void Multiplication_MustThrowExeption()
         {
-            Assert.False(100 == 1001);
+            Calculator calculator = new Calculator();
+            Assert.Throws<ArgumentException>(() => calculator.Miltiplication(1.1, 2.2));
         }
+
+        [Test]
+        public void Additional_MustReturnCorrectValue()
+        {
+            Calculator calculator = new Calculator();
+            Assert.True(calculator.Additional(8, 2) == 10);
+        }
+
         [Test]
         public void Substruction_MustReturnCorrectValue()
         {
             Calculator calculator = new Calculator();
-            Assert.True(calculator.Substruction(300,10) == 290);
+            Assert.True(calculator.Substraction(300,10) == 290);
         }
         [Test]
         public void Division_MustReturnCorrectValue()
