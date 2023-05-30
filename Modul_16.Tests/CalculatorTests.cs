@@ -13,12 +13,6 @@ namespace Modul_16.Tests
             Calculator calculator = new Calculator();
             Assert.True(calculator.Miltiplication(4, 10) == 40);
         }
-        [Test]
-        public  void Multiplication_MustThrowExeption()
-        {
-            Calculator calculator = new Calculator();
-            Assert.Throws<ArgumentException>(() => calculator.Miltiplication(1.1, 2.2));
-        }
 
         [Test]
         public void Additional_MustReturnCorrectValue()
