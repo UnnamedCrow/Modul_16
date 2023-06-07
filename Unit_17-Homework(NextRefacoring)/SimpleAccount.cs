@@ -8,15 +8,16 @@ namespace Unit_17_Homework_NextRefacoring_
 {
     public class SimpleAccount : IAccount
     {
+        private double balance;
         public double Balance
         {
             get
             {
-                return Balance;
+                return balance;
             }
             set
             {
-                Balance = value;
+                balance = value;
                 Interest = value * 0.4;
                 if (value < 1000)
                     Interest -= value * 0.2;
