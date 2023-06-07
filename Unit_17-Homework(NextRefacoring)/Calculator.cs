@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unit_17_Homework_Refactoring_
+namespace Unit_17_Homework_NextRefacoring_
 {
     public static class Calculator
     {
         // Метод для расчета процентной ставки
         public static void CalculateInterest(IAccount account)
         {
-            // расчёт процентной ставки
-            account.CalculateInterest();
+            Console.WriteLine(account.GetInterest());
         }
     }
 }

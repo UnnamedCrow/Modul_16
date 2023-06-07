@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Unit_17_Homework_Refactoring_
 {
-    internal interface IAccount
+    public interface IAccount
     {
+        // тип учетной записи
+        public string Type { get; set; }
+
+        // баланс учетной записи
+        public double Balance { get; set; }
+
+        // процентная ставка
+        public double Interest { get; set; }
+
+        // расчёт процентной ставки
+        public void CalculateInterest();
     }
 }
