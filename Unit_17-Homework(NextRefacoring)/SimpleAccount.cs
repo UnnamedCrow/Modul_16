@@ -18,6 +18,8 @@ namespace Unit_17_Homework_NextRefacoring_
             set
             {
                 balance = value;
+
+                // расчёт процентной ставки будет происходить автоматически при изменении балланса аккаунта
                 Interest = value * 0.4;
                 if (value < 1000)
                     Interest -= value * 0.2;
@@ -26,13 +28,8 @@ namespace Unit_17_Homework_NextRefacoring_
                     Interest -= value * 0.4;
             }
         }
+        // измененять значение процентной ставки можно только внутри класса
+        public double Interest { get; private set; }
 
-        public double Interest { get; set; }
-        
-        // Расчёт процентной ставки для конкретного типа аккаунта
-        public double GetInterest()
-        {
-            return Interest;
-        }
     }
 }

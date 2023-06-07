@@ -2,12 +2,9 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            IAccount n = new SimpleAccount();
-            n.Balance = 500;
-            Console.WriteLine(n.GetInterest());
-            Console.ReadLine();
+
         }
     }
 }
